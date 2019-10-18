@@ -24,4 +24,4 @@ Create an image gallery where the main image changes by the click on a thumbnail
 
 **Result**
 
-- [UPDATE DEMO LINK](https://Sijey.github.io/js-task-gallery-DOM/)
+- [UPDATE DEMO LINK](https://Sijey.github.io/js_task-gallery-DOM/)
