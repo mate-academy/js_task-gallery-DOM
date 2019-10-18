@@ -1,0 +1,73 @@
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("../images/background.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  padding-top: 50px;
+}
+
+.gallery {
+  height: 100%;
+  perspective: 90px;
+}
+.gallery:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 15px;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(transparent 30%, white);
+  transform: rotateX(90deg) scaleX(1.2);
+  transform-origin: bottom center;
+}
+
+#largeImg {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 319.3px;
+  height: 453.9px;
+  padding: 5px;
+}
+
+#thumbs {
+  display: flex;
+  padding-top: 20px;
+}
+#thumbs a {
+  width: 159px;
+  height: 225px;
+  padding: 3px;
+  margin: 2px;
+  float: left;
+}
+#thumbs a:hover {
+  border-color: #FF9900;
+}
+#thumbs li {
+  list-style: none;
+}
+#thumbs li img {
+  width: 159px;
+  height: 225px;
+  transition: 1s;
+}
+#thumbs li img:hover {
+  transform: translateY(-20px);
+}
+
+/*# sourceMappingURL=main.css.map */
