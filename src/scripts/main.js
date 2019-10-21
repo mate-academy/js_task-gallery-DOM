@@ -5,4 +5,5 @@ elements.addEventListener('click', (action) => {
   action.preventDefault();
   const element = action.target.closest('.list-item__link');
   largeImg.src = element.href;
+  largeImg.alt = element.title;
 });
