@@ -6,10 +6,10 @@ const list = document.querySelector('#thumbs');
 list.addEventListener('click', (action) => {
   action.preventDefault();
   const clicked = action.target.closest('.list-item__link');
-  chenging(clicked.href, clicked.title);
+  changing(clicked.href, clicked.title);
 });
 
-function chenging(link, title) {
+function changing(link, title) {
   largeImg.src = link;
   largeImg.alt = title;
 }
