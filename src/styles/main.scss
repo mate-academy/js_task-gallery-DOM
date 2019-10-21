@@ -6,3 +6,39 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 20px 0 0;
+  }
+
+  &__large-img {
+    width: 420px;
+    height: 350px;
+    border: 2px solid rgb(218, 218, 218);
+    padding: 3px;
+    display: block;
+  }
+
+  &__thumb {
+    width: 80px;
+    height: 80px;
+    border: 2px solid rgb(218, 218, 218);
+    padding: 2px;
+    margin-right: 3px;
+  }
+}
+
+.list-item__link {
+  width: 80px;
+  height: 80px;
+}
