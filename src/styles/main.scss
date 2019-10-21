@@ -2,7 +2,32 @@
 @import "fonts";
 @import "typography";
 
-body {
+body,
+li,
+a,
+ul {
   margin: 0;
   padding: 0;
+}
+
+.gallery {
+  width: 40%;
+  margin: 50px auto;
+
+  &__img {
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid gray;
+    padding: 5px;
+  }
+
+  &__list {
+    display: flex;
+    list-style-type: none;
+  }
+
+  &__large-img {
+    width: 100%;
+    height: 500px;
+  }
 }
