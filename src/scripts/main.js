@@ -1,16 +1,19 @@
 'use strict';
 
-document.querySelector('#thumbs').onclick = (event1) => {
-  const thumbnail = event1.target.closest('a');
+const thumbs = document.querySelector('#thumbs');
+const largeImg = document.querySelector('#largeImg');
 
-  if (!thumbnail) {
+thumbs.addEventListener('click', (action) => {
+  const thumbNail = action.target.closest('a');
+
+  if (!thumbNail) {
     return;
   }
-  showThumb(thumbnail.href, thumbnail.title);
-  event1.preventDefault();
-};
+  showThumb(thumbNail.href, thumbNail.title);
+  action.preventDefault();
+});
 
 function showThumb(href, title) {
-  document.querySelector('#largeImg').src = href;
-  document.querySelector('#largeImg').alt = title;
+  largeImg.src = href;
+  largeImg.alt = title;
 }
