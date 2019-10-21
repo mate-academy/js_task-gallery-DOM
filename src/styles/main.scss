@@ -5,4 +5,46 @@
 body {
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .gallery {
+    width: 800px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__img {
+      width: 100%;
+      border: 1px solid gray;
+      padding: 5px;
+      background-color: lightgray;
+      transition: box-shadow 1s;
+      border-radius: 10px;
+      box-sizing: border-box;
+      &:hover {
+        box-shadow: 0 0 5px 0 rgba(0,0,0,0.75);
+      }
+    }
+
+    &__thumb {
+      transition: transform 1s;
+      &:hover {
+        transform: scale(0.9);
+      }
+    }
+  }
+
+  .gallery__list {
+    display: flex;
+    margin: 10px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .list-item {
+    list-style: none;
+    margin: 0 10px;
+  }
 }
