@@ -35,7 +35,7 @@ body {
   transform-origin: bottom center;
 }
 
-#largeImg {
+.largeImg {
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -44,29 +44,29 @@ body {
   padding: 5px;
 }
 
-#thumbs {
+.thumbs {
   display: flex;
   padding-top: 20px;
 }
-#thumbs a {
+.thumbs__link {
   width: 159px;
   height: 225px;
   padding: 3px;
   margin: 2px;
   float: left;
 }
-#thumbs a:hover {
+.thumbs__link:hover {
   border-color: #FF9900;
 }
-#thumbs li {
+.thumbs__item {
   list-style: none;
 }
-#thumbs li img {
+.thumbs__item_img {
   width: 159px;
   height: 225px;
   transition: 1s;
 }
-#thumbs li img:hover {
+.thumbs__item_img:hover {
   transform: translateY(-20px);
 }
 

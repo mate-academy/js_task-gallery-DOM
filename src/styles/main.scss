@@ -29,7 +29,7 @@ body {
   }
 }
 
-#largeImg {
+.largeImg {
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -38,11 +38,11 @@ body {
   padding: 5px;
 }
 
-#thumbs {
+.thumbs {
   display: flex;
   padding-top: 20px;
 
-  a {
+  &__link {
     width: 159px;
     height: 225px;
     padding: 3px;
@@ -54,10 +54,10 @@ body {
     }
   }
 
-  li {
+  &__item {
     list-style: none;
 
-    img {
+    &_img {
       width: 159px;
       height: 225px;
       transition: 1s;
