@@ -1,8 +1,58 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+$large-img-width: 800px;
 
 body {
   margin: 0;
   padding: 0;
+}
+
+.gallery {
+
+  max-width: $large-img-width;
+  display: block;
+  margin: 7px auto;
+  box-sizing: border-box;
+
+  &__list {
+
+    max-width: $large-img-width;
+    margin: 0;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img {
+
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
+
+#largeImg {
+
+  max-width: $large-img-width;
+  border: 1px solid black;
+  padding: 7px;
+  box-sizing: border-box;
+}
+
+.list-item {
+
+  list-style-type: none;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 7px;
+  margin: 0;
+  box-sizing: border-box;
+  max-width: calc(#{$large-img-width} / 5 - 5px);
+  max-height: calc(#{$large-img-width} / 5 - 5px);
+  overflow: hidden;
+
+  &:hover {
+
+    box-shadow: 0 0 15px gray;
+  }
 }
