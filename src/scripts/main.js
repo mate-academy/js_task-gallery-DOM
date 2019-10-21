@@ -8,5 +8,6 @@ gallery.addEventListener('click', function(e) {
     const img = e.target;
     e.preventDefault();
     largeImg.src = img.parentNode.href;
+    largeImg.alt = img.alt;
   }
 });
