@@ -18,7 +18,7 @@ li {
   align-items: center;
 
   & > div {
-    width: 87%;
+    width: 67%;
     display: flex;
     justify-content: center;
   }
@@ -26,7 +26,7 @@ li {
   &__list {
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    width: 67%;
     margin-top: 10px;
     padding: 0;
   }
@@ -41,11 +41,12 @@ li {
   }
 
   &__large-img {
-    width: 80%;
+    width: 100%;
     height: 70vh;
   }
 
   &__img {
+    box-sizing: border-box;
     border: 5px solid white;
     outline: 2px solid silver;
   }
