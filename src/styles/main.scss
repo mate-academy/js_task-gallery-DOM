@@ -2,7 +2,42 @@
 @import "fonts";
 @import "typography";
 
+* {
+  box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery {
+  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+
+  &__list {
+    margin-top: 5px;
+    display: flex;
+    width: 100%;
+  }
+
+  &__img {
+    width: 100%;
+    border: 1px solid gray;
+    padding: 5px;
+  }
+}
+
+.list-item {
+  margin-right: 5px;
+
+  &:last-child {
+    margin: 0;
+  }
+
+  &:hover {
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.75);
+  }
 }
