@@ -25,3 +25,5 @@ Create an image gallery where the main image changes by the click on a thumbnail
 **Result**
 
 - [UPDATE DEMO LINK](https://<your_account>.github.io/<repo_name>/)
+
+- [MY DEMO LINK](https://kostya-flern.github.io/js_task-gallery-DOM/src)
