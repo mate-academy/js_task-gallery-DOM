@@ -24,8 +24,4 @@ Create an image gallery where the main image changes by the click on a thumbnail
 
 **Result**
 
-<<<<<<< HEAD
-- [UPDATE DEMO LINK](https://karpyshynroman.github.io/js_task-gallery-DOM/src/index.html)
-=======
 - [UPDATE DEMO LINK](https://karpyshynroman.github.io/js_task-gallery-DOM/index.html)
->>>>>>> ca0cc9d5477b75f89a1ef0afd4b061750ff7e3b8
