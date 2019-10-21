@@ -1,8 +1,41 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+$width: 600px;
 
 body {
   margin: 0;
   padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.gallery {
+  width: $width;
+  margin: 100px auto;
+
+  &__large-img {
+    width: 100%;
+  }
+
+  &__img {
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    object-fit: cover;
+  }
+
+  &__thumb {
+    width: 112px;
+  }
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+  }
 }
