@@ -7,5 +7,6 @@ slideBlock.addEventListener('click', (e) => {
   e.preventDefault();
   if (e.target.closest('li')) {
     largeImg.src = e.target.src;
+    largeImg.alt = e.target.alt;
   }
 });

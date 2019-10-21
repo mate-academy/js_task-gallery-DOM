@@ -31,6 +31,9 @@ li {
   display: flex;
   justify-content: center;
 }
+.gallery__thumb {
+  width: 100%;
+}
 
 .gallery__list {
   display: flex;
@@ -38,15 +41,6 @@ li {
   width: 67%;
   margin-top: 10px;
   padding: 0;
-}
-
-.gallery__thumb {
-  width: 190px;
-  height: 170px;
-}
-
-.gallery__thumb:hover {
-  box-shadow: 0 0 20px grey;
 }
 
 .gallery__large-img {
@@ -58,6 +52,14 @@ li {
   box-sizing: border-box;
   border: 5px solid white;
   outline: 2px solid silver;
+}
+
+.list-item {
+  width: 400px;
+}
+
+.list-item:hover {
+  box-shadow: 0 0 20px grey;
 }
 
 /*# sourceMappingURL=main.css.map */
