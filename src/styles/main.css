@@ -15,16 +15,28 @@ body {
 }
 
 .gallery__large-img {
+  margin-top: 25px;
   width: 400px;
   height: 400px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: lightgray;
 }
 
 .gallery__thumb {
   width: 200px;
   height: 200px;
+  padding: 10px;
+  margin-left: 20px;
+  border-radius: 30px;
+  background-color: lightgray;
+  transition: all 0.5s ease-in-out;
+}
+.gallery__thumb:hover {
+  transform: scale(1.1);
 }
 
 .gallery__list {
