@@ -5,4 +5,63 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-X: hidden;
 }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+.gallery {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__large-img {
+    width: 80vw;
+  }
+
+  &__list {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 81vw;
+  }
+
+  &__thumb {
+    width: 15vw;
+  }
+}
+
+.gallery > div {
+  margin: 0 auto;
+  padding: 5px;
+  border: solid 3px #E8E6E7;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+  width: 81vw;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.list-item {
+  border: solid 3px #E8E6E7;
+  min-width: 15.5vw;
+  display: flex;
+  justify-content: center;
+  padding: 3px;
+  box-sizing: border-box;
+}
+
