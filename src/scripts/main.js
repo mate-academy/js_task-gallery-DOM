@@ -1,13 +1,12 @@
 'use strict';
 const container = document.querySelector('#thumbs');
 
-container.addEventListener('click', (evenT) => {
-  evenT.preventDefault();
-  if (evenT.target.parentNode.className !== 'list-item__link') {
+container.addEventListener('click', (action) => {
+  action.preventDefault();
+  if (action.target.parentNode.className !== 'list-item__link') {
     return;
   }
   const bigImg = document.querySelector('#largeImg');
-  bigImg.src = evenT.target.parentNode.href;
+  bigImg.src = action.target.parentNode.href;
+  bigImg.alt = action.target.alt;
 });
-
-
