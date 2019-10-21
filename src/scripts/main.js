@@ -8,7 +8,7 @@ function showThumbnail(href, title) {
 }
 
 thumbs.addEventListener('click', (event) => {
-  let thumbnail = event.target.closest('.thumbs__link');
+  const thumbnail = event.target.closest('.thumbs__link');
 
   showThumbnail(thumbnail.href, thumbnail.title);
   event.preventDefault();

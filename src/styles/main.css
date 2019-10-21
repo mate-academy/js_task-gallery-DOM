@@ -37,10 +37,9 @@ body {
 
 .largeImg {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 319.3px;
-  height: 453.9px;
+  margin: 0 auto;
+  width: 319px;
+  height: 454px;
   padding: 5px;
 }
 
@@ -49,11 +48,10 @@ body {
   padding-top: 20px;
 }
 .thumbs__link {
-  width: 159px;
+  width: 160px;
   height: 225px;
   padding: 3px;
   margin: 2px;
-  float: left;
 }
 .thumbs__link:hover {
   border-color: #FF9900;
@@ -62,7 +60,7 @@ body {
   list-style: none;
 }
 .thumbs__item_img {
-  width: 159px;
+  width: 160px;
   height: 225px;
   transition: 1s;
 }
