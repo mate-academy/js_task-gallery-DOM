@@ -24,4 +24,4 @@ Create an image gallery where the main image changes by the click on a thumbnail
 
 **Result**
 
-- [LINK](https://nikakarelets.github.io/js_task-gallery-DOM/index.html)
+- [LINK](https://nikakarelets.github.io/js_task-gallery-DOM/src/index.html)
