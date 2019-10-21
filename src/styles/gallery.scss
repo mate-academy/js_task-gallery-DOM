@@ -1,0 +1,34 @@
+.gallery {
+  width: 600px;
+  // height: 800px;
+  margin: 10px auto;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(5, auto);
+    justify-content: space-between;
+
+    & > .list-item {
+      list-style-type: none;
+    }
+  }
+
+  &__large-img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid slategrey;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
+  &__thumb {
+    border: 1px solid slategrey;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+}
