@@ -6,3 +6,21 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.gallery {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.gallery__img {
+  box-sizing: border-box;
+  width: 100%;
+  border: 2px solid gray;
+  padding: 5px;
+}
+
+.gallery__list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
