@@ -1,6 +1,14 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
   margin: 0;
@@ -22,7 +30,7 @@ body {
 }
 
 .gallery__thumb:hover {
-  box-shadow: 0 0 10px rgba(125,125,125,0.9);
+  box-shadow: 0 0 10px rgba(125, 125, 125, 0.9);
 }
 
 .gallery {
@@ -41,3 +49,5 @@ body {
   list-style: none;
   grid-template-columns: repeat(5, 1fr);
 }
+
+/*# sourceMappingURL=main.css.map */
