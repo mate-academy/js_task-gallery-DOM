@@ -16,13 +16,8 @@ body {
   overflow-X: hidden;
 }
 
-ul {
+ul, li {
   list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-li {
   margin: 0;
   padding: 0;
 }
@@ -54,11 +49,11 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 81vw;
+  width: 70vw;
 }
 
 .gallery__thumb {
-  width: 15vw;
+  width: 13vw;
 }
 
 .gallery > div {
@@ -68,7 +63,8 @@ img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-bottom: 5px;
-  width: 81vw;
+  max-width: 70vw;
+  max-height: 70vh;
   box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -80,7 +76,7 @@ img {
 
 .list-item {
   border: solid 3px #E8E6E7;
-  min-width: 15.5vw;
+  min-width: 13vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
