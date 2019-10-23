@@ -5,9 +5,9 @@ const bigPicture = document.querySelector('#largeImg');
 
 occurrent.addEventListener('click', choose);
 
-function choose(ev) {
+function choose(occasion) {
   event.preventDefault();
-  const target = ev.target;
+  const target = occasion.target;
 
   if (target.tagName !== 'IMG') {
     return;

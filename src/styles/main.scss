@@ -2,15 +2,18 @@
 @import "fonts";
 @import "typography";
 
-body, ul {
+body,
+ul {
   margin: 0;
   padding: 0;
 }
 
 .gallery {
-  margin-left: calc(50% - 880px);
-  display: inline-block;
   box-sizing: border-box;
+  width: 600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
 
   &__large-img {
     width: 100%;
@@ -26,5 +29,12 @@ body, ul {
   &__list {
     list-style: none;
     display: flex;
+    width: 600px;
+  }
+
+  &__thumb {
+    width: 112px;
+    height: 112px;
   }
 }
+
