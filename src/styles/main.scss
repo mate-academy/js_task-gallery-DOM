@@ -1,5 +1,7 @@
 @import "utils";
+
 @import "fonts";
+
 @import "typography";
 
 body {
@@ -9,7 +11,8 @@ body {
 
 .list-item {
   list-style-type: none;
-  display: inline;}
+  display: inline;
+}
 
 .gallery__img {
   width: 5%;
