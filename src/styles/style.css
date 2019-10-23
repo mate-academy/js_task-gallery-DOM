@@ -1,8 +1,14 @@
-@import "utils";
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
 
-@import "fonts";
-
-@import "typography";
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
   margin: 0;
@@ -28,3 +34,5 @@ body {
   margin: 10px 0 20px 40px;
   border: 1px solid gray;
 }
+
+/*# sourceMappingURL=style.css.map */
