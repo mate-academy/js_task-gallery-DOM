@@ -9,15 +9,18 @@ h1 {
   font-weight: normal;
   font-style: normal;
 }
-body, ul {
+body,
+ul {
   margin: 0;
   padding: 0;
 }
 
 .gallery {
-  margin-left: calc(50% - 880px);
-  display: inline-block;
   box-sizing: border-box;
+  width: 600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .gallery__large-img {
   width: 100%;
@@ -31,6 +34,11 @@ body, ul {
 .gallery__list {
   list-style: none;
   display: flex;
+  width: 600px;
+}
+.gallery__thumb {
+  width: 112px;
+  height: 112px;
 }
 
 /*# sourceMappingURL=main.css.map */
