@@ -24,4 +24,4 @@ Create an image gallery where the main image changes by the click on a thumbnail
 
 **Result**
 
-- [DEMO LINK](https://shurkodr.github.io/js_task-gallery-DOM/)
+- [DEMO LINK](https://shurkodr.github.io/js_task-gallery-DOM/index.html)
