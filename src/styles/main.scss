@@ -2,7 +2,43 @@
 @import "fonts";
 @import "typography";
 
+$galleryWidth: 650px;
+
 body {
   margin: 0;
   padding: 0;
+}
+
+.gallery {
+  width: $galleryWidth;
+  margin: auto;
+
+  &__large-img {
+    width: $galleryWidth;
+    height: 450px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__thumb {
+    box-sizing: border-box;
+    margin: 0 1px;
+    width: $galleryWidth / 5;
+
+  }
+
+  &__img {
+    border: 4px double lightgray;
+    cursor: pointer;
+  }
+
+  &__img:hover {
+    box-shadow: 0 0 10px gray;
+  }
 }
