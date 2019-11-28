@@ -1,3 +1,12 @@
 'use strict';
 
-console.log('hello mate academy!');
+const thumbs = document.getElementById('thumbs');
+const largeImg = document.getElementById('largeImg');
+
+thumbs.addEventListener('click', function(e) {
+  if (e.target.className.includes('gallery__thumb')) {
+    e.preventDefault();
+    largeImg.src = e.target.parentNode.href;
+    largeImg.alt = e.target.parentNode.title;
+  }
+});

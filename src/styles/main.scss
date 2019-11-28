@@ -6,3 +6,30 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  margin: auto;
+}
+
+.gallery__img {
+  padding: 3px;
+  border: 1px solid #e8e6e7;
+}
+
+.gallery__large-img {
+  width: 100%;
+}
+
+.gallery__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+.gallery__thumb {
+  width: 80%;
+}
