@@ -2,7 +2,46 @@
 @import "fonts";
 @import "typography";
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
 }
+
+.gallery {
+  width: 700px;
+  height: 90vh;
+  margin: auto;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.gallery__large-img {
+  width: 700px;
+  height: 450px;
+}
+
+.gallery__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gallery__thumb {
+  width: 135px;
+
+}
+
+.gallery__img {
+  border: 4px double #bfbfbf;
+  cursor: pointer;
+}
+
+// .list-item__link {
+//   pointer-events: none;
+// }
