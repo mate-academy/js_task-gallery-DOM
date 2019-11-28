@@ -1,8 +1,33 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "reset";
 
 body {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#largeImg {
+  border: solid 1px #ccc;
+  width: 35vw;
+  height: 25vw;
+  padding: 5px;
+}
+
+#thumbs {
+  display: flex;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__thumb {
+    border: solid 1px #ccc;
+    width: 6vw;
+    height: 6vw;
+    padding: 3px;
+    margin: 2px;
+  }
 }
