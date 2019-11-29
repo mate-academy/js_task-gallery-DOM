@@ -6,3 +6,28 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.gallery {
+  margin: auto;
+  width: 800px;
+
+  &__img {
+    height: 150px;
+    width: 150px;
+  }
+
+  &__large-img {
+    box-sizing: border-box;
+    border: 1px solid grey;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}
