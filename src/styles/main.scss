@@ -6,3 +6,43 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.gallery {
+  width: 500px;
+  margin: auto;
+
+  &__img {
+    width: 100%;
+  }
+
+  &__large-img {
+    padding: 3px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+  }
+
+  &__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__thumb {
+    padding: 3px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+
+    &:hover {
+      box-shadow: 0 0 10px #ccc;
+    }
+  }
+}
+
+.list-item {
+  margin-right: 3px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
