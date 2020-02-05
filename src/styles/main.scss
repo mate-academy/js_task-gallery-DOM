@@ -6,3 +6,51 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__large-img {
+    width: 770px;
+    height: 540px;
+    object-fit: cover;
+  }
+
+  &__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__thumb {
+    width: 142px;
+    height: 137px;
+  }
+
+  &__large-img,
+  .list-item__link {
+    padding: 3px;
+    border: 2px solid lightgrey;
+    border-radius: 2px;
+  }
+
+  .list-item {
+    list-style: none;
+
+    &__link {
+      display: block;
+      height: 138px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 0 0 2px rgba(217,204,217,1);
+    }
+  }
+
+  .list-item:not(:last-of-type) {
+    margin-right: 5px;
+  }
+}
