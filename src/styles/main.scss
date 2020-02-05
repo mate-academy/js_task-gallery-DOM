@@ -6,3 +6,44 @@ body {
   margin: 0;
   padding: 0;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+.gallery {
+  margin: auto;
+  margin-top: 30px;
+  max-width: 1280px;
+
+  &__img {
+    border: 2px solid #cecece;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__thumb {
+    max-width: 250px;
+  }
+}
+
+.list-item {
+  display: inline-block;
+
+  &__link {
+    text-decoration: none;
+    display: block;
+  }
+}
