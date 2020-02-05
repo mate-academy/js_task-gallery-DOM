@@ -1,0 +1,31 @@
+.gallery {
+  max-width: 800px;
+  margin: 20px auto;
+
+  &__large-img {
+    width: 100%;
+    @include border;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__thumb {
+    margin-right: 10px;
+    max-width: 140px;
+    @include border;
+    transition: 0.2;
+  }
+
+  &__thumb:hover {
+    box-shadow: 0 0 10px rgba(33, 33, 33, 0.3);
+  }
+
+  &__thumb:last-child {
+    margin-right: 0;
+  }
+}

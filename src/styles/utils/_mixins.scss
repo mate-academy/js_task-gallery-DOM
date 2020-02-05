@@ -4,3 +4,10 @@
     #{$_property}: $_toValue;
   }
 }
+
+@mixin border {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
