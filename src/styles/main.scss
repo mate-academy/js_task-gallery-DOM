@@ -6,3 +6,43 @@ body {
   margin: 0;
   padding: 0;
 }
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.gallery {
+  &__large-img {
+    width: 950px;
+    height: 650px;
+    padding: 3px;
+    border: 2px solid lightgrey;
+    object-fit: cover;
+  }
+
+  &__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__thumb {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+.list-item {
+  margin-right: 5px;
+
+  &__link {
+    display: block;
+    height: 180px;
+    padding: 2px;
+    border: 2px solid lightgrey;
+  }
+}
