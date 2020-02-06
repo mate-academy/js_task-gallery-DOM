@@ -1,11 +1,13 @@
 'use strict';
 
 const largeImg = document.querySelector('#largeImg');
-const linkCollections = document.querySelectorAll('.list-item__link');
 
-for (const item of linkCollections) {
-  item.addEventListener('click', (e) => {
-    e.preventDefault();
-    largeImg.src = item.href;
-  });
+document.querySelector('ul').addEventListener('click', onClick);
+
+function onClick(e) {
+  e.preventDefault();
+
+  const currentLink = e.target.parentElement.href;
+
+  largeImg.src = currentLink;
 }
