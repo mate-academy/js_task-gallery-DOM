@@ -5,4 +5,36 @@
 body {
   margin: 0;
   padding: 0;
+
+  box-sizing: border-box;
+}
+
+.gallery {
+  width: 600px;
+  margin: 10vh auto;
+
+  &__large-img {
+    width: 600px;
+
+    border-radius: 10%;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &__thumb {
+    width: 100px;
+
+    border-radius: 10%;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
 }
