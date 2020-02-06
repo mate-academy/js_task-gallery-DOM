@@ -3,14 +3,15 @@
 const bigImg = document.querySelector('.gallery__large-img');
 
 function replaceImg(e) {
-  if (e.target.className.includes('gallery__thumb')
-    || e.target.className.includes('list-item__link')) {
+  const { className: elemClass } = e.target;
+
+  if (elemClass.includes('gallery__thumb')
+    || elemClass.includes('list-item__link')) {
     e.preventDefault();
 
-    const currentSource = e.target.getAttribute('src')
-      || e.target.getAttribute('href');
+    const { href: elemHref } = e.target.closest('[href]');
 
-    bigImg.setAttribute('src', currentSource);
+    bigImg.setAttribute('src', elemHref);
   }
 }
 
