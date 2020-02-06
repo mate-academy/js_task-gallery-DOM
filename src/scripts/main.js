@@ -7,7 +7,7 @@ function clickHandler() {
   event.preventDefault();
 
   if (event.target.tagName === 'IMG') {
-    largeImg.src = event.target.src.replace('-thumb.jpeg', '.png');
+    largeImg.src = event.target.closest('a').href;
   }
 }
 
