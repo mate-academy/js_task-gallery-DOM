@@ -1,0 +1,36 @@
+@import "vars";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.gallery {
+  margin: 50px auto;
+  max-width: $size;
+  height: $size;
+
+  &__list {
+    display: flex;
+    max-width: $size;
+  }
+
+  &__large-img {
+    max-width: $size;
+    border: 1px solid gray;
+    padding: 3px;
+  }
+
+  &__img {
+    border: 1px solid gray;
+    padding: 3px;
+    margin-right: 5px;
+  }
+
+  &__thumb {
+    width: $size / 5 - 4px;
+    height: $size / 5 - 4px;
+  }
+}
