@@ -6,3 +6,44 @@ body {
   margin: 0;
   padding: 0;
 }
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.gallery {
+  width: 45%;
+  margin: 20px auto;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  &__img {
+    border: 2px solid #ccc;
+    padding: 5px;
+
+    &:hover {
+      outline: 4px solid #ccc;
+    }
+  }
+}
+
+.list-item {
+  width: 17%;
+
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
+
+  &__link {
+    display: block;
+  }
+}
