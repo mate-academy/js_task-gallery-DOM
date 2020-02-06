@@ -9,11 +9,12 @@ function showImg(href, title) {
 }
 
 thumbs.addEventListener('click', (ev) => {
+  ev.preventDefault();
+
   const thumbnail = ev.target.closest('a');
 
   if (!thumbnail) {
     return;
   }
   showImg(thumbnail.href, thumbnail.title);
-  ev.preventDefault();
 });
