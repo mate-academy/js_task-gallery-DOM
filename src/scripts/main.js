@@ -7,9 +7,9 @@ function changeImage(evt) {
   evt.preventDefault();
 
   const item = evt.target.closest('.list-item__link');
-  const imgValue = item.getAttribute('href');
+  const href = item.getAttribute('href');
 
-  bigImage.setAttribute('src', imgValue);
+  bigImage.setAttribute('src', href);
 }
 
 galleryList.addEventListener('click', changeImage);
