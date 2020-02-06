@@ -1,14 +1,13 @@
 'use strict';
 
-const galery = [...document.querySelectorAll('.gallery__thumb')];
+const gallery = document.querySelector('.gallery__list');
 const bigImg = document.querySelector('#largeImg');
 
-galery.forEach(picture => {
-  picture.addEventListener('click', function(elem) {
-    elem.preventDefault();
+gallery.addEventListener('click', function() {
+  event.preventDefault();
 
-    const pictureSrc = picture.getAttribute('src', picture);
+  const pictureSrc = event.target.getAttribute('src', '.list-item__link');
+  const bigPictureSrc = pictureSrc.replace('-thumb.jpeg', '.png');
 
-    bigImg.setAttribute('src', pictureSrc);
-  });
+  bigImg.setAttribute('src', bigPictureSrc);
 });
