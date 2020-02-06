@@ -2,17 +2,19 @@
 
 const bigImg = document.querySelector('.gallery__large-img');
 
-function replaceImg(e) {
-  const { className: elemClass } = e.target;
+function onImageClick(e) {
+  const { target } = e;
 
-  if (elemClass.includes('gallery__thumb')
-    || elemClass.includes('list-item__link')) {
+  if (
+    target.className.includes('gallery__thumb')
+    || target.className.includes('list-item__link')
+  ) {
     e.preventDefault();
 
-    const { href: elemHref } = e.target.closest('[href]');
+    const { href } = target.closest('[href]');
 
-    bigImg.setAttribute('src', elemHref);
+    bigImg.setAttribute('src', href);
   }
 }
 
-document.body.addEventListener('click', replaceImg);
+document.body.addEventListener('click', onImageClick);
