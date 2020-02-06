@@ -5,4 +5,47 @@
 body {
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.gallery {
+  &__large-img {
+    width: 1000px;
+    height: 780px;
+    border: 1px grey solid;
+    border-radius: 7px;
+    padding: 5px;
+  }
+
+  &__list {
+    box-sizing: border-box;
+    display: flex;
+    width: 1000px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .list-item {
+    text-decoration: none;
+    margin: 10px;
+    background-position: center;
+
+    &__link {
+      height: 0;
+    }
+
+    .gallery__img {
+      max-width: 100%;
+      height: auto;
+      padding: 5px;
+      border: 1px grey solid;
+      border-radius: 7px;
+    }
+
+    .gallery__img:hover {
+      box-shadow: 0 0 5px black;
+    }
+  }
 }
