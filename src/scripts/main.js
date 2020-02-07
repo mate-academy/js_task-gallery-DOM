@@ -6,10 +6,8 @@ const galleryList = document.querySelector('#thumbs');
 galleryList.addEventListener('click', changeImage);
 
 function changeImage(e) {
-  if (e.target.className.includes('gallery__thumb')) {
-    e.preventDefault();
-  }
+  e.preventDefault();
 
-  image.src = e.target.parentNode.href;
+  image.src = e.target.closest('a').href;
   image.alt = e.target.galleryList;
 };
