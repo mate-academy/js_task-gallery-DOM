@@ -4,6 +4,8 @@ const mainSlide = document.getElementById('largeImg');
 
 mainSlide.parentElement.classList.add('gallery__image');
 
+let currentElement = null;
+
 const handlerClick = function(e) {
   e.preventDefault();
 
@@ -15,10 +17,9 @@ const handlerClick = function(e) {
 
   mainSlide.setAttribute('src', src);
 
-  const arrayOfSlides = Array.from(this.querySelectorAll('.list-item'));
-
-  arrayOfSlides.map(el => el.classList.remove('list-item--active'));
+  currentElement && currentElement.classList.remove('list-item--active');
   e.target.parentElement.parentElement.classList.add('list-item--active');
+  currentElement = e.target.parentElement.parentElement;
 };
 
 document.addEventListener('click', handlerClick);
