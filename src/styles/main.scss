@@ -3,6 +3,46 @@
 @import "typography";
 
 body {
-  margin: 0;
   padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+}
+
+.gallery {
+  width: 800px;
+  margin: 0 auto;
+
+  &__large-img {
+    width: 800px;
+    height: 600px;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__thumb {
+    width: 150px;
+    height: 150px;
+  }
+
+  &__img {
+    border: 1px solid #cecece;
+    transition: border 0.15s;
+    padding: 5px;
+    border-radius: 5px;
+    object-fit: cover;
+
+    &:hover {
+      border: 3px solid #cecece;
+    }
+  }
 }
