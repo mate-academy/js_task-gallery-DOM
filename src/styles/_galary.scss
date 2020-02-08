@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+.gallery__thumb {
+  width: 120px;
+  height: 100px;
+}
+
+.gallery__large-img {
+  width: 635px;
+  height: 400px;
+}
+
+.gallery__list {
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 635px;
+  padding-inline-start: 0;
+}
+
+li {
+  list-style: none;
+}
