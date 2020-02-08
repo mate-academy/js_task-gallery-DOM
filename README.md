@@ -23,5 +23,4 @@ Create an image gallery where the main image changes by the click on a thumbnail
 [Guideline](https://github.com/mate-academy/js_task-DOM-guideline)
 
 **Result**
-
-- [UPDATE DEMO LINK](https://<your_account>.github.io/<repo_name>/)
+- [UPDATE DEMO LINK](https://LeonidShv.github.io/js_task-gallery-DOM/)
