@@ -6,7 +6,7 @@ const list = document.querySelector('.gallery__list');
 list.addEventListener('click', () => {
   event.preventDefault();
 
-  const eventSrc = event.target.src;
+  const eventSrc = event.target.parentNode;
 
-  bigPic.src = eventSrc.replace(`-thumb.jpeg`, `.png`);
+  bigPic.src = eventSrc.href;
 });
