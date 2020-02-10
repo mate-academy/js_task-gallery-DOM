@@ -18,8 +18,8 @@ const handlerClick = function(e) {
   mainSlide.setAttribute('src', src);
 
   currentElement && currentElement.classList.remove('list-item--active');
-  e.target.parentElement.parentElement.classList.add('list-item--active');
-  currentElement = e.target.parentElement.parentElement;
+  e.target.closest('.list-item').classList.add('list-item--active');
+  currentElement = e.target.closest('.list-item');
 };
 
 document.addEventListener('click', handlerClick);
