@@ -6,3 +6,38 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.gallery {
+  width: 900px;
+  margin: 10px auto 0;
+
+  &__large-img {
+    height: 685px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 3px solid rgb(202, 198, 198);
+    border-radius: 3px;
+  }
+
+  &__list {
+    display: flex;
+    margin-top: 0;
+    list-style: none;
+    padding: 0;
+  }
+
+  .list-item {
+    margin-right: 6px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__thumb {
+    width: 100%;
+    box-sizing: border-box;
+    border: 3px solid rgb(202, 198, 198);
+    border-radius: 3px;
+    padding: 3px;
+  }
+}
