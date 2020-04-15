@@ -6,3 +6,42 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.gallery {
+  display: grid;
+  justify-items: center;
+  grid-gap: 10px;
+
+  &__large-img {
+    display: inline-block;
+    padding: 8px;
+    border: 2px solid gray;
+    width: 850px;
+    height: 450px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-column-gap: 10px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__thumb {
+    width: 150px;
+    height: 150px;
+    display: block;
+    object-fit: fill;
+  }
+}
+
+.list-item {
+  padding: 6px;
+  border: 2px solid gray;
+
+  &__link {
+    display: inline-block;
+  }
+}
