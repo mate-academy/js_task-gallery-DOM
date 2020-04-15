@@ -6,3 +6,40 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.gallery {
+  margin: 0 auto;
+  width: 1280px;
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 0;
+    width: 1280px;
+    list-style: none;
+  }
+
+  &__img {
+    border: 5px solid #fff;
+    box-shadow: 0 0 5px #716b6c;
+    border-radius: 10px;
+    &:hover {
+      box-shadow: 0 0 20px cornflowerblue;
+    }
+  }
+
+  &__large-img {
+    width: 1280px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border: 10px solid #fff;
+    &:hover {
+      box-shadow: 0 0 20px cornflowerblue;
+    }
+  }
+
+  &__thumb {
+    width: 220px;
+  }
+}
