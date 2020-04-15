@@ -5,4 +5,39 @@
 body {
   margin: 0;
   padding: 0;
+  padding-top: 25px;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.gallery {
+  max-width: 700px;
+  margin: auto;
+  &__large-img {
+    max-width: 100%;
+    border: 1px solid #eee;
+    padding: 3px;
+    box-sizing: border-box;
+  }
+  &__list {
+    display: flex;
+    padding: 0;
+    margin-left: -2px;
+    margin-right: -2px;
+    .list-item {
+      flex: 0 0 calc(20% - 4px);
+      box-sizing: border-box;
+      border: 1px solid #eee;
+      padding: 3px;
+      margin-left: 2px;
+      margin-right: 2px;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
 }
