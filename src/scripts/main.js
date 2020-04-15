@@ -2,20 +2,19 @@
 
 const largeImg = document.querySelector('.gallery__large-img');
 const ul = document.querySelector('#thumbs');
-// const li = document.querySelector('.list-item');
 
-function mainPicture(href, title) {
-  largeImg.src = href;
-  largeImg.alt = title;
+function mainPicture(currentLink) {
+  largeImg.src = currentLink.href;
+  largeImg.alt = currentLink.title;
 }
 
-ul.onclick = function(eventClick) {
-  const clickedLink = eventClick.target.closest('a');
-
-  if (!clickedLink) {
-    return false;
-  }
-
-  mainPicture(clickedLink.href, clickedLink.title);
+ul.addEventListener('click', eventClick => {
   eventClick.preventDefault();
-};
+
+  const clickedElem = eventClick.target;
+  const currentLink = clickedElem.closest('a');
+
+  if (currentLink) {
+    mainPicture(currentLink);
+  }
+});
