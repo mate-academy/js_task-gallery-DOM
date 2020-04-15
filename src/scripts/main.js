@@ -1,3 +1,14 @@
 'use strict';
 
-console.log('hello mate academy!');
+const list = document.querySelector('#thumbs');
+const img = document.querySelector('#largeImg');
+
+// eslint-disable-next-line no-shadow
+const changeImg = function(event) {
+  const item = event.target.closest('.list-item__link');
+
+  event.preventDefault();
+  img.src = item.href;
+};
+
+list.addEventListener('click', changeImg);
