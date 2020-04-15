@@ -5,4 +5,42 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #1e1336;
+}
+
+.gallery {
+  position: relative;
+  top: 100px;
+  text-align: center;
+}
+
+.gallery__large-img {
+  width: 516px;
+  height: 400px;
+}
+
+.gallery__thumb {
+  width: 100px;
+  height: 100px;
+}
+
+.gallery__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.gallery__img {
+  border: 1px solid #eee;
+  padding: 3px;
+  margin-left: 2px;
+  margin-right: 2px;
+  box-sizing: border-box;
+  border-radius: 25px;
+
+  &:hover {
+    box-shadow: 0 3px 1px pink;
+  }
 }
