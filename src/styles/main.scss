@@ -6,3 +6,37 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 50px auto;
+
+  &__img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 100%;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+  }
+
+  &__thumb {
+    transition: box-shadow 0.4s;
+
+    &:hover {
+      box-shadow: 0 0 3px 1px gray;
+    }
+  }
+}
+
+.list-item {
+  height: 100%;
+  flex-basis: 17%;
+}
