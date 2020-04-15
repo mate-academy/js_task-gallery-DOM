@@ -6,11 +6,11 @@ thumbs.addEventListener("click", event => {
   const link = target.closest("a");
 
   if(link) {
-    show(link);
+    showPicture(link);
   }
 })
 
-function show(link) {
+function showPicture(link) {
   largeImg.src = link.href;
   largeImg.alt = link.title;
 }
