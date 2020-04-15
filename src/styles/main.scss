@@ -1,8 +1,38 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+// @import "utils";
+// @import "fonts";
+// @import "typography";
 
 body {
   margin: 0;
   padding: 0;
+}
+
+.gallery {
+  margin: 10% 25%;
+}
+
+.gallery__list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+}
+
+.gallery__img {
+  width: 100%;
+  border: 3px solid white;
+  box-shadow: grey 0 0 5px;
+  box-sizing: border-box;
+  &:hover {
+    box-shadow: grey 0 0 10px;
+  }
+}
+
+.gallery__large-img {
+  width: 100%;
+}
+
+.list-item__link {
+  width: 100%;
 }
