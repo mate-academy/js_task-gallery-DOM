@@ -26,5 +26,5 @@ Create an image gallery where the main image changes by the click on a thumbnail
 
    Replace `<your_account>` with your Github username in the links
 
-    - [DEMO LINK](https://andreas-just.github.io/js_calendar-table-DOM/)
-    - [PULL REQUEST](https://github.com/mate-academy/js_calendar-table-DOM/pull/33/files)
+    - [DEMO LINK](https://andreas-just.github.io/js_task-gallery-DOM/)
+    - [PULL REQUEST](https://github.com/mate-academy/js_task-gallery-DOM/pull/93/files)
