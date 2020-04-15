@@ -1,8 +1,48 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "../scripts/lib/reset";
 
+$width: 550px;
+
+html,
 body {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.gallery {
+
+  div {
+    box-sizing: border-box;
+    width: $width;
+    padding: 4px;
+    box-shadow: 0 0 5px black;
+    margin-bottom: 10px;
+  }
+
+  &__thumb,
+  &__large-img {
+    display: block;
+    width: 100%;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    width: $width;
+  }
+}
+
+.list-item {
+
+  &__link {
+    display: block;
+    box-sizing: border-box;
+    width: $width / 5 - 5px;
+    padding: 3px;
+    box-shadow: 0 0 3px black;
+  }
 }
