@@ -6,7 +6,7 @@ const galleryList = gallery.querySelector('.gallery__list');
 
 galleryList.addEventListener('click', (e) => {
   e.preventDefault();
-
+const { target } = e;
   const item = e.target.closest('.gallery__item');
 
   if (!item || !galleryList.contains(item)) {
