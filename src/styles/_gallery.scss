@@ -1,0 +1,29 @@
+.gallery {
+  margin-top: 5vh;
+
+  &__large-img {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 550px;
+    border: 1px solid #aaa;
+    padding: 6px;
+  }
+
+  &__list {
+    margin-top: 4px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__thumb {
+    width: 100px;
+    border: 1px solid #aaa;
+    padding: 4px;
+    margin: 2px;
+
+    &:hover {
+      box-shadow: 0 0 6px cornflowerblue;
+    }
+  }
+}
