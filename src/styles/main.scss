@@ -15,7 +15,6 @@ body {
     margin: 0 auto;
     padding: 0;
     list-style: none;
-
     display: flex;
     width: 1280px;
     justify-content: space-between;
@@ -25,9 +24,7 @@ body {
     border: 3px solid lightgrey;
     border-radius: 10px;
     box-shadow: 0 0 2px #000;
-
     transition: 0.3s ease-in-out;
-
     &:hover {
       box-shadow: 0 0 15px #000;
     }
@@ -37,9 +34,7 @@ body {
     width: 1280px;
     margin-bottom: 10px;
     box-sizing: border-box;
-
     border: 5px solid lightgrey;
-
     &:hover {
       box-shadow: 0 0 2px #000;
     }
