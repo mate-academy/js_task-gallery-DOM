@@ -6,3 +6,34 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 100px;
+
+  &__img {
+    width: 105px;
+    height: auto;
+    margin: 12px;
+    margin-top: 0;
+    border: 4px solid rgb(3, 238, 255);
+    border-radius: 5px;
+  }
+
+  &__large-img {
+    width: 650px;
+    height: auto;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    padding: 0;
+
+    list-style-type: none;
+  }
+}
