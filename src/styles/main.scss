@@ -6,3 +6,44 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.gallery {
+  margin: 0 auto;
+  margin-top: 15px;
+  width: 730px;
+
+  &__list {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(5, 1fr);
+
+    margin-top: 25px;
+    padding: 0;
+  }
+
+  &__thumb {
+    width: 120px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 2px solid #c8c8c8;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: 0.3s;
+
+    &:hover {
+      box-shadow: 0 14px 28px rgba(0,0,0,0.5), 0 10px 10px rgba(0,0,0,0.5);
+      transform: scale(1.1);
+    }
+  }
+
+  &__large-img {
+    width: 730px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 2px solid #c8c8c8;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+}
+
+.list-item {
+  list-style-type: none;
+}
