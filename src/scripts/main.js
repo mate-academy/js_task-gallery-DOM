@@ -4,9 +4,9 @@ const largeImg = document.getElementById('largeImg');
 const gallery = document.getElementById('thumbs');
 
 gallery.addEventListener('click', (events) => {
-  event.preventDefault();
+  events.preventDefault();
 
-  const currentElemHref = event.target.closest('.list-item__link').href;
+  const currentElemHref = events.target.closest('.list-item__link').href;
 
   largeImg.src = currentElemHref;
 });
