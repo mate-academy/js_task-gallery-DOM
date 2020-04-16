@@ -1,18 +1,13 @@
 'use strict';
 
-const clickableImages = document.querySelectorAll('.gallery__thumb');
 const galleryLargeImage = document.querySelector('.gallery__img');
+const gallery = document.querySelector('.gallery');
 
-for (const thumbImage of clickableImages) {
-  thumbImage.addEventListener('click', handler);
-}
-
-const imageLinks = document.querySelectorAll('.list-item__link');
-
-for (const link of imageLinks) {
-  link.addEventListener('click', (e) => e.preventDefault());
-}
+gallery.addEventListener('click', handler);
 
 function handler(e) {
-  galleryLargeImage.src = e.target.src.replace('-thumb.jpeg', '.png');
+  const item = e.target.closest('.list-item__link');
+
+  e.preventDefault();
+  galleryLargeImage.src = item.href;
 }
