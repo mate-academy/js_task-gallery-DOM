@@ -3,7 +3,7 @@
 const largeImg = document.querySelector('.gallery__large-img');
 const ul = document.querySelector('#thumbs');
 
-function mainPicture(currentLink) {
+function setPicture(currentLink) {
   largeImg.src = currentLink.href;
   largeImg.alt = currentLink.title;
 }
@@ -15,6 +15,6 @@ ul.addEventListener('click', eventClick => {
   const currentLink = clickedElem.closest('a');
 
   if (currentLink) {
-    mainPicture(currentLink);
+    setPicture(currentLink);
   }
 });
