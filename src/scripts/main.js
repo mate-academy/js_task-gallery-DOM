@@ -1,30 +1,17 @@
 'use strict';
 
 const largeImg = document.querySelector('#largeImg');
-const smallImg = document.querySelectorAll('.gallery__thumb');
-const imgLink = document.querySelectorAll('.list-item__link');
+const smallImgs = document.querySelector('#thumbs');
 
-function removeLink(item) {
-  let i = 0;
+const chooseSmallImg = (click) => {
+  const chosen = click.target.closest('.list-item__link');
 
-  do {
-    item[i].href = '#';
-    i++;
-  } while (i < item.length);
-}
+  if (!chosen || !smallImgs.contains(chosen)) {
+    return;
+  }
 
-removeLink(imgLink);
+  click.preventDefault();
+  largeImg.src = chosen.href;
+};
 
-function addOnclick() {
-  let i = 0;
-
-  do {
-    smallImg[i].onclick = function() {
-      largeImg.src = this.src;
-    };
-
-    i++;
-  } while (i < smallImg.length);
-}
-
-addOnclick(smallImg);
+smallImgs.addEventListener('click', chooseSmallImg);
