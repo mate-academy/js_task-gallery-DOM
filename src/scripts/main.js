@@ -1,29 +1,19 @@
 'use strict';
 
 const handleMainImg = () => {
-  const gallery = document.querySelector('.gallery');
+  const thumbs = document.querySelector('#thumbs');
 
-  gallery.addEventListener('click', evnt => {
-    const largeImg = document.querySelector('.gallery__large-img');
-    const target = evnt.target.classList;
+  thumbs.addEventListener('click', evnt => {
+    evnt.preventDefault();
 
-    if (target.contains('gallery__img')) {
-      evnt.preventDefault();
+    const largeImg = document.querySelector('#largeImg');
+    const img = evnt.target.closest('.list-item__link');
 
-      let img = evnt.target.src;
-
-      img = img.replace('-thumb.jpeg', '.png');
-      largeImg.src = img;
-    };
-
-    if (target.contains('list-item__link')) {
-      evnt.preventDefault();
-
-      let img = evnt.target.children[0].src;
-
-      img = img.replace('-thumb.jpeg', '.png');
-      largeImg.src = img;
+    if (!img) {
+      return;
     }
+
+    largeImg.src = img.href;
   });
 };
 
