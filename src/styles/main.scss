@@ -6,3 +6,38 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.gallery {
+  width: 960px;
+  margin: 30px auto;
+
+  &__list {
+    width: 960px;
+    padding: 0;
+    margin: 15px auto;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 15px;
+    list-style: none;
+  }
+
+  &__img {
+    box-sizing: border-box;
+    border: 10px solid white;
+    box-shadow: 0 0 2px black;
+    transition: 0.2s;
+
+    &:hover {
+      box-shadow: 0 0 3px black;
+    }
+  }
+
+  &__large-img {
+    width: 960px;
+  }
+
+  &__thumb {
+    width: 180px;
+  }
+}
