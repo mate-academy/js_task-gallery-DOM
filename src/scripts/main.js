@@ -17,6 +17,6 @@ gallery.addEventListener('click', (e) => {
   changeHref(thumbHref);
 
   function changeHref(href) {
-    largeImg.src = thumbHref;
+    largeImg.src = href;
   }
 });
