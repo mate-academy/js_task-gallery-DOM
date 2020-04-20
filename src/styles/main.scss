@@ -5,4 +5,29 @@
 body {
   margin: 0;
   padding: 0;
+
+  .gallery {
+    margin: 20px 50px;
+    display: grid;
+    justify-content: center;
+
+    #largeImg {
+      width: 785px;
+      display: block;
+    }
+
+    &__list {
+      padding: 0;
+
+      .list-item {
+        display: inline-block;
+        padding: 2px;
+        margin: 0;
+        
+        .gallery__thumb {
+          width: 150px;
+        }
+      }
+    }
+  }
 }
