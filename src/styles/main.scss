@@ -2,7 +2,36 @@
 @import "fonts";
 @import "typography";
 
-body {
+* {
   margin: 0;
   padding: 0;
+}
+
+.gallery {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -35%);
+
+  &__list {
+    display: flex;
+    list-style-type: none;
+  }
+
+  &__img {
+    border: 3px solid white;
+    -webkit-box-shadow: 0 0 1px 0 rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 0 1px 0 rgba(0,0,0,0.75);
+    box-shadow: 0 0 1px 0 rgba(0,0,0,0.75);
+  }
+
+  &__large-img {
+    width: 400px;
+    height: 300px;
+  }
+
+  &__thumb {
+    width: 75px;
+    height: 80px;
+  }
 }
