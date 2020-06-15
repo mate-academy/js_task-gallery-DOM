@@ -3,6 +3,37 @@
 @import "typography";
 
 body {
+  margin: 100px;
+}
+
+.gallery {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__img {
+    box-sizing: border-box;
+    border: double 3px rgb(0, 204, 255);
+  }
+
+  &__large-img {
+    width: 500px;
+  }
+
+  &__thumb {
+    width: 100px;
+  }
+}
+
+.list-item {
   margin: 0;
-  padding: 0;
+  list-style-type: none;
 }
