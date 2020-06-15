@@ -2,7 +2,40 @@
 @import "fonts";
 @import "typography";
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
+}
+
+ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.gallery {
+  width: $width-resolution;
+
+  margin: auto;
+  padding: 0 50px;
+}
+
+.gallery__large-img {
+  display: flex;
+
+  height: $height-resolution;
+  margin: 0 auto 2rem;
+}
+
+.gallery__thumb {
+  display: block;
+
+  width: $thumbs-width;
+  margin-right: 1rem;
 }
