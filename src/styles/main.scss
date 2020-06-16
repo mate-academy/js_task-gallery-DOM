@@ -6,3 +6,46 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.gallery {
+  max-width: 555px;
+
+  margin: 0 auto;
+  margin-top: 100px;
+
+  &__large-img {
+    width: 549px;
+    height: 400px;
+
+    border: 3px solid #fff;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.75);
+
+    &:hover {
+      box-shadow: 0 0 5px 0 rgba(109, 109, 109, 0.75);
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+
+    width: 555px;
+
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  &__thumb {
+    width: 100px;
+    height: 100px;
+
+    border: 3px solid #fff;
+    box-shadow: 0 0 2px 0 rgba(109, 109, 109, 0.75);
+
+    &:hover {
+      box-shadow: 0 0 5px 0 rgba(109, 109, 109, 0.75);
+    }
+  }
+}
