@@ -3,6 +3,25 @@
 @import "typography";
 
 body {
-  margin: 0;
+  margin: 0 100px;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery__list {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery__img {
+  width: 200px;
+}
+
+#largeImg {
+  background-size: contain;
+  height: 600px;
+  width: 1200px;
 }
