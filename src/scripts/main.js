@@ -8,14 +8,7 @@ list.addEventListener('click', changeMainPhoto);
 function changeMainPhoto(e) {
   e.preventDefault();
 
-  const image = e.target;
+  const link = e.target.closest('a');
 
-  if (e.target.tagName !== 'IMG') {
-    return;
-  }
-
-  const path = image.getAttribute('src');
-  const newPath = path.slice(0, -11) + '.png';
-
-  largeImage.setAttribute('src', newPath);
+  largeImage.setAttribute('src', link.href);
 }
