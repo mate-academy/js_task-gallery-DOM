@@ -2,7 +2,45 @@
 @import "fonts";
 @import "typography";
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
+  padding-top: 50px;
+}
+
+ul,
+li {
+  margin: 0;
   padding: 0;
+  list-style: none;
+}
+
+.gallery {
+  max-width: 625px;
+  margin: 0 auto;
+
+  &__large-img {
+    width: 625px;
+  }
+
+  &__img {
+    border: 1px solid #ccc;
+    padding: 3px;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__thumb {
+    max-width: 125px;
+    transition: box-shadow 0.2s ease;
+
+    &:hover {
+      box-shadow: 0 0 5px 0 rgba(204, 204, 204, 1);
+    }
+  }
 }
