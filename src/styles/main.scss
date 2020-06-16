@@ -9,11 +9,22 @@ li {
   padding: 0;
 }
 
+ul,
+li {
+  list-style: none;
+  list-style-type: none;
+}
+
 * {
   box-sizing: border-box;
 }
 
-#largeImg {
+.gallery {
+  width: 750px;
+  margin: 20px auto;
+}
+
+.gallery__large-img {
   width: 100%;
 }
 
@@ -22,6 +33,12 @@ li {
   justify-content: space-around;
 }
 
-.gallery__thumb:hover {
-  border: 3px solid lightgrey;
+.gallery__thumb {
+  width: 150px;
+}
+
+.gallery__thumb,
+.gallery__large-img {
+  padding: 5px;
+  border: 1px solid lightgrey;
 }
