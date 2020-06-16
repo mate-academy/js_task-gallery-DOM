@@ -13,6 +13,12 @@
   left: 50%;
   transform: translate(-50%, -35%);
 
+  &__large-img {
+    width: 400px;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+
   &__list {
     display: flex;
     list-style-type: none;
@@ -24,12 +30,7 @@
     -moz-box-shadow: 0 0 1px 0 rgba(0,0,0,0.75);
     box-shadow: 0 0 1px 0 rgba(0,0,0,0.75);
   }
-
-  &__large-img {
-    width: 400px;
-    height: 300px;
-  }
-
+  
   &__thumb {
     width: 75px;
     height: 80px;

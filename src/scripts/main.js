@@ -1,15 +1,13 @@
 'use strict';
 
-const smallImages = document.querySelectorAll('.gallery__thumb');
+const largeImg = document.querySelector('.gallery__large-img');
 
-for (const smallImage of smallImages) {
-  smallImage.onclick = function() {
-    switcher(this);
-  };
-}
+const thumbs = document.querySelector('#thumbs');
 
-function switcher(smallImage) {
-  const fullImg = document.querySelector('#largeImg');
+thumbs.addEventListener('click', function(e) {
+  e.preventDefault();
 
-  fullImg.src = smallImage.src;
-}
+  if (e.target.className === 'gallery__img gallery__thumb') {
+    largeImg.src = e.target.src.replace('-thumb.jpeg', '.png');
+  }
+});
