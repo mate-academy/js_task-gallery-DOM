@@ -7,7 +7,7 @@ const list = document.querySelector('#thumbs');
 
 list.addEventListener('click', function(event) {
   const target = event.target;
-  const imgSrc = target.getAttribute('src');
+  const imgSrc = target.getAttribute('full');
 
   event.preventDefault();
   largeImg.setAttribute('src', imgSrc);
