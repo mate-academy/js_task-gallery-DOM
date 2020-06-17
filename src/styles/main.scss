@@ -6,3 +6,35 @@ body {
   margin: 0;
   padding: 0;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+
+  width: 900px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: 100%;
+
+    list-style: none;
+  }
+
+  &__thumb {
+    width: 170px;
+    border: 3px double lightgray;
+  }
+
+  &__large-img {
+    width: 100%;
+    border: 3px double lightgray;
+  }
+}
