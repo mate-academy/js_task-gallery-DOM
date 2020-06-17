@@ -1,0 +1,19 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__thumb {
+    @include borders (150px);
+  }
+
+  &__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__large-img {
+    @include borders (750px);
+  }
+}
