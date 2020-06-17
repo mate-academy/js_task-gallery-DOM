@@ -6,3 +6,27 @@ body {
   margin: 0;
   padding: 0;
 }
+
+img {
+  width: 100%;
+}
+
+.gallery {
+  width: 700px;
+  margin: 0 auto;
+
+  &__list {
+    margin: 20px 0 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+  }
+}
+
+.list-item {
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
