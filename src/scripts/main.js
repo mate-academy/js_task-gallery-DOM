@@ -7,7 +7,7 @@ const list = galleryMain.querySelector('#thumbs');
 function changeImg(changeEvent) {
   changeEvent.preventDefault();
 
-  if (changeEvent.target.tagName !== 'UL') {
+  if (changeEvent.target.parentElement.tagName === 'A') {
     mainImg.src = changeEvent.target.parentElement.href;
   }
 }
