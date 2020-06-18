@@ -4,3 +4,11 @@
     #{$_property}: $_toValue;
   }
 }
+
+@mixin borders ($wid) {
+  width: $wid;
+  margin: 2px;
+  padding: 4px;
+  border: 1px solid cadetblue;
+  box-sizing: border-box;
+}
