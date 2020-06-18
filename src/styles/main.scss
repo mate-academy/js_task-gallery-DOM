@@ -2,7 +2,39 @@
 @import "fonts";
 @import "typography";
 
-body {
+body,
+ul,
+li {
   margin: 0;
   padding: 0;
+}
+
+.gallery {
+  margin: 50px auto 0;
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  flex-direction: column;
+  
+  &__img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+  }
+
+}
+
+.list-item {
+  padding: 5px;
+  transition: transform ease 0.2s;
+}
+
+.list-item:hover {
+  transform: scale(1.05);
 }
